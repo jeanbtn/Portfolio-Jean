@@ -1,0 +1,903 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #000;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+   /* FONT FAMILY */
+
+   @font-face {
+       font-family: 'bebas_neueregular';
+       src: url('bebasneue-webfont.woff2') format('woff2'), url('bebasneue-webfont.woff') format('woff');
+       font-weight: normal;
+       font-style: normal;
+   }
+
+   /* GLOBAL SETTINGS */
+   * {
+       margin: 0;
+       padding: 0;
+       position: relative;
+       -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+       box-sizing: border-box;
+   }
+   img {
+       border: none;
+       vertical-align: middle;
+   }
+   ul {
+       list-style: none;
+   }
+   .clear {
+       clear: both;
+   }
+   a {
+       text-decoration: none;
+       color: inherit;
+   }
+   a:hover {
+       text-decoration: none;
+   }
+   body {
+       font-size: 14px;
+       font-family: arial, sans-serif;
+       color: #333;
+       background: #000;
+   }
+
+
+   /* HEADER */
+   /* LOGO */
+   .logo {
+       margin-top: 50px;
+       color: black;
+
+   }
+
+   /* BACKGROUND */
+   .toppage {
+       height: 850px;
+       background: url(../img/wallpaper-700842.jpg);
+       position: relative;
+       width: 100%;
+       min-height: auto;
+       background-position: top;
+       -webkit-background-size: cover;
+       -moz-background-size: cover;
+       background-size: cover;
+       -o-background-size: cover;
+   }
+
+   /* NAVBAR */
+   header nav {
+       font-family: 'bebas_neueregular';
+       float: right;
+       display: inline-block;
+       text-align: right;
+       z-index: 4;
+       font-size: 42px;
+   }
+
+   header nav ul li {
+       margin-top: 50px;
+       display: inline-block;
+       color: #888;
+   }
+   .pdright {
+       padding-right: 20px;
+   }
+   header nav ul li a {
+       display: inline;
+       text-transform: uppercase;
+   }
+   .active {
+       text-decoration: underline;
+       color: #fff;
+   }
+
+   /* BUTTON VIEW PROJECTS */
+   .projectbutton {
+       font-family: 'bebas_neueregular';
+       font-size: 45px;
+       color: #fff;
+       display: block;
+       text-align: center;
+       border: 3px solid #fff;
+       width: 300px;
+       margin: 40px auto;
+   }
+
+   /* FIRST QUOTE */
+   .quotetitle {
+       font-family: 'bebas_neueregular';
+       z-index: 1;
+       text-align: center;
+       color: #fff;
+       padding-top: 300px;
+       font-size: 70px;
+   }
+
+   /* SECOND QUOTE */
+   .quote {
+       font-family: 'bebas_neueregular';
+       text-align: center;
+       color: #fff;
+       font-size: 42px;
+       max-width: 760px;
+       margin: 0 auto;
+       font-weight: lighter;
+   }
+
+   /* SECTION WORK */
+
+   /* TITLE : WORK */
+   .working {
+       font-family: 'bebas_neueregular';
+       color: #fff;
+       text-align: center;
+       font-size: 70px;
+       text-decoration: underline;
+       padding-top: 20px;
+   }
+
+   /* GALERIE JEAN */
+   /* LEFT IMAGE */
+   .leftj {
+       background-image: url(../img/jean1.jpg);
+       -webkit-background-size: cover;
+       -moz-background-size: cover;
+       -o-background-size: cover;
+       background-size: cover;
+       background-position: center;
+       position: relative;
+       opacity: 0.5;
+   }
+   .leftj:hover {
+       opacity: 1;
+   }
+   /* MIDDLE IMAGE */
+   .middlej {
+       background-image: url(../img/jean2.jpg);
+       -webkit-background-size: cover;
+       -moz-background-size: cover;
+       -o-background-size: cover;
+       background-size: cover;
+       background-position: center;
+       position: relative;
+       opacity: 0.5;
+   }
+   .middlej:hover {
+       opacity: 1;
+   }
+   /* RIGHT IMAGE */
+   .rightj {
+       background-image: url(../img/jean3.jpg);
+       -webkit-background-size: cover;
+       -moz-background-size: cover;
+       -o-background-size: cover;
+       background-size: cover;
+       background-position: center;
+       position: relative;
+       opacity: 0.5;
+   }
+   .rightj:hover {
+       opacity: 1;
+   }
+   /* SIZE IMG */
+   .sizeimg {
+       width: 100%;
+       height: 344px;
+   }
+
+
+   .rightc:hover {
+       opacity: 1;
+   }
+
+   /* FOOTER SECTION */
+   /* COPYRIGHT */
+   footer p {
+       font-family: 'bebas_neueregular';
+       text-align: center;
+       color: #fff;
+       font-size: 16px;
+       padding-top: 50px;
+   }
+
+   /* SOCIAL MEDIA */
+   .fa {
+       color: white;
+   }
+   footer i {
+       opacity: 0.5;
+   }
+   footer i:hover {
+       opacity: 1;
+   }
+   .centerico {
+       clear: both;
+       text-align: center;
+   }
+
+   /* BUTTON GO TOP */
+   .gotop {
+       position: fixed;
+       right: 60px;
+       bottom: 20px;
+       opacity: 0.5;
+       z-index: 1000;
+   }
+   .gotop:hover {
+       opacity: 1;
+   }
+
+
+
+   /******************************************** CONTACT PAGE ************************************************************/
+   /* CENTER PAGE */
+   .centercontact {
+   text-align: center;
+   margin-top: 20%;
+   }
+
+   /* INPUT CONTACT */
+   .input {
+   	position: relative;
+   	z-index: 1;
+   	display: inline-block;
+   	margin: 1em;
+   	max-width: 350px;
+   	width: calc(100% - 2em);
+   	vertical-align: top;
+   }
+
+   .input__field {
+   	position: relative;
+   	display: block;
+   	float: right;
+   	padding: 0.8em;
+   	width: 60%;
+   	border: none;
+   	border-radius: 0;
+   	background: #f0f0f0;
+   	color: #aaa;
+   	font-weight: bold;
+     font-family: 'bebas_neueregular';
+   	-webkit-appearance: none; /* for box shadows to show on iOS */
+   }
+
+   .input__field:focus {
+   	outline: none;
+   }
+
+   .input__label {
+   	display: inline-block;
+   	float: right;
+   	padding: 0 1em;
+   	width: 40%;
+   	color: #6a7989;
+   	font-weight: bold;
+   	font-size: 70.25%;
+   	-webkit-font-smoothing: antialiased;
+       -moz-osx-font-smoothing: grayscale;
+   	-webkit-touch-callout: none;
+   	-webkit-user-select: none;
+   	-khtml-user-select: none;
+   	-moz-user-select: none;
+   	-ms-user-select: none;
+   	user-select: none;
+   }
+
+   .input__label-content {
+   	position: relative;
+   	display: block;
+   	padding: 1.6em 0;
+   	width: 100%;
+   }
+
+   .graphic {
+   	position: absolute;
+   	top: 0;
+   	left: 0;
+   	fill: none;
+   }
+
+   /* STYLE INPUT */
+   /* Madoka */
+   .input--madoka {
+   	margin: 1.1em;
+   }
+
+   .input__field--madoka {
+   	width: 100%;
+   	background: transparent;
+   	color: #fff;
+   }
+
+   .input__label--madoka {
+     font-family: 'bebas_neueregular';
+     font-size: 15px;
+     font-weight: lighter;
+   	position: absolute;
+   	width: 100%;
+   	height: 100%;
+   	color: #fff;
+   	text-align: left;
+   	cursor: text;
+   }
+
+   .input__label-content--madoka {
+   	-webkit-transform-origin: 0% 50%;
+   	transform-origin: 0% 50%;
+   	-webkit-transition: -webkit-transform 0.3s;
+   	transition: transform 0.3s;
+   }
+
+   .graphic--madoka {
+   	-webkit-transform: scale3d(1, -1, 1);
+   	transform: scale3d(1, -1, 1);
+   	-webkit-transition: stroke-dashoffset 0.3s;
+   	transition: stroke-dashoffset 0.3s;
+   	pointer-events: none;
+
+   	stroke: #fff;
+   	stroke-width: 4px;
+   	stroke-dasharray: 962;
+   	stroke-dashoffset: 558;
+   }
+
+   .input__field--madoka:focus + .input__label--madoka,
+   .input--filled .input__label--madoka {
+   	cursor: default;
+   	pointer-events: none;
+   }
+
+   .input__field--madoka:focus + .input__label--madoka .graphic--madoka,
+   .input--filled .graphic--madoka {
+   	stroke-dashoffset: 0;
+   }
+
+   .input__field--madoka:focus + .input__label--madoka .input__label-content--madoka,
+   .input--filled .input__label-content--madoka {
+   	-webkit-transform: scale3d(0.81, 0.81, 1) translate3d(0, 4em, 0);
+   	transform: scale3d(0.81, 0.81, 1) translate3d(0, 4em, 0);
+   }
+
+   /* CONTACT TITLE */
+   .contacttitle {
+     color: #fff;
+     font-family: 'bebas_neueregular';
+
+   }
+   /* BACKGROUND IMAGE CONTACT */
+   .toppagecontact {
+     height: 1000px;
+     background: url(../img/wallpaper-744402.jpg);
+     position: relative;
+     width: 100%;
+     min-height: auto;
+     background-position: top;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     background-size: cover;
+     -o-background-size: cover;
+   }
+
+   /* BACKGROUND PAGE PORTFOLIO */
+   .toppagework {
+     height: 200px;
+     background-color: #000;
+   }
+
+   .titleproject {
+       font-family: 'bebas_neueregular';
+       z-index: 1;
+       text-align: center;
+       color: #fff;
+       font-size: 70px;
+   }
+
+   .viewproject {
+         font-family: 'bebas_neueregular';
+         color: #fff;
+         font-size: 30px;
+         font-weight: lighter;
+         display: block;
+         text-align: center;
+         margin: auto;
+         width: 150px;
+
+   }
+
+   .textproject {
+       font-family: 'bebas_neueregular';
+       text-align: center;
+       color: #fff;
+       font-size: 24px;
+       padding-top: 50px;
+       font-weight: lighter;
+   }
+
+
+   /************************** ABOUT PAGE ****************************/
+
+
+
+   /* ABOUT TITLE */
+
+   .abouttitle{
+     font-family: 'bebas_neueregular';
+     z-index: 1;
+     text-align: center;
+     color: #fff;
+     padding-top: 150px;
+     font-size: 60px;
+     text-decoration: underline;
+   }
+
+
+   /* QUOTE QUESTION */
+
+   .ask{
+     font-family: 'bebas_neueregular';
+     z-index: 1;
+     text-align: center;
+     color: #fff;
+     padding-top: 60px;
+     font-size: 40px;
+
+   }
+
+   /* SECTION "ME" */
+
+   .about-us{
+     padding-top: 0;
+   }
+
+   /* INTRODUCE ME */
+
+
+
+   .p-jean{
+     font-family: 'bebas_neueregular';
+     text-align: center;
+     color: #fff;
+     font-size: 42px;
+     max-width: 760px;
+     margin: 0 auto;
+     font-weight: lighter;
+     padding-bottom: 20px;
+     padding-top: 150px;
+   }
+
+   .presentation{
+     font-family: 'bebas_neueregular';
+     text-align: center;
+     color: #fff;
+     font-size: 20px;
+     max-width: 760px;
+     margin: 0 auto;
+     padding-top: 30px;
+     font-weight: lighter;
+   }
+
+
+     /* TOP PAGE ABOUT */
+
+   .toppage-about{
+     height: 750px;
+     background: url(../img/166719.jpg);
+     position: relative;
+     width: 100%;
+     min-height: auto;
+     background-position: top;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     background-size: cover;
+     -o-background-size: cover;
+   }
+
+   /* PICTURE JEAN */
+
+
+
+
+   .photo-jean{
+     display: block;
+     margin: auto;
+     height: 270px;
+   }
+
+
+   /* ICONE TWITTER */
+
+   .centerico-perso{
+     clear: both;
+     text-align: center;
+     padding-top: 10px;
+
+   }
+
+    /* FOOTER */
+
+   #footer_site{
+     padding-top: 200px;
+   }
+
+
+   /* ------------------------------------------------------------------ RESPONSIVE DESIGN ------------------------------------------------------------------ */
+
+
+   /*  ------------------------------------------ Mobile device ------------------------------------------ */
+
+   @media screen and (max-width: 479px) {
+     /* HEIGHT HEADER */
+       .toppage {
+           height: 600px;
+       }
+       /* LOGO */
+       .logo {
+           display: block;
+           margin: 0 auto;
+           padding-top: 50px;
+       }
+       /* NAVBAR */
+       header nav {
+           width: 100%;
+           font-family: 'bebas_neueregular';
+           display: inline-block;
+           font-size: 30px;
+           text-align: center;
+       }
+       header nav ul li {
+           text-align: center;
+       }
+   }
+   /* HIDDEN BUTTON :VIEW PROJECT */
+   .projectbutton {
+       display: none ;
+   }
+
+   /* FIRST QUOTE TITLE */
+   .quotetitle {
+       padding-top: 20%;
+       font-size: 45px;
+   }
+
+   /* SECOND QUOTE */
+   .quote {
+       font-size: 30px;
+   }
+
+   /*  ------------------------------------------ Tablette device ------------------------------------------ */
+
+   @media screen and (min-width: 480px) and (max-width: 768px) {
+
+   /* HEIGHT HEADER */
+       .toppage {
+           height: 600px;
+       }
+       /* LOGO */
+       .logo {
+           display: block;
+           margin: 0 auto;
+           padding-top: 50px;
+       }
+       /* NAVBAR */
+       header nav {
+           width: 100%;
+           font-family: 'bebas_neueregular';
+           display: inline-block;
+           font-size: 30px;
+           text-align: center;
+       }
+       header nav ul li {
+           text-align: center;
+       }
+   }
+
+   /* BUTTON VIEW PROJECT */
+   .projectbutton {
+       font-family: 'bebas_neueregular';
+       font-size: 45px;
+       color: #fff;
+       display: block;
+       text-align: center;
+       border: 3px solid #fff;
+       width: 300px;
+       margin: 40px auto;
+   }
+
+   }
+
+   /*  ------------------------------------------ Laptop device ------------------------------------------ */
+   @media screen and (min-width: 769px) {
+
+     /* LOGO */
+     .logo {
+         float: left;
+         margin-left: 5%;
+     }
+
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
